@@ -1,0 +1,12 @@
+[submodule "ilwct_server"]
+	path = ilwct_server
+	url = https://github.com/adonismis/ilwct_server.git
+[submodule "ruiyang-em.com"]
+	path = ruiyang-em.com
+	url = https://github.com/adonismis/ruiyang-em.com.git
+[submodule "savs"]
+	path = savs
+	url = https://github.com/adonismis/savs.git
+[submodule "ilwct_life"]
+	path = ilwct_life
+	url = https://github.com/adonismis/ilwct_life.git

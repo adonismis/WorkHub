@@ -2,6 +2,34 @@
 
 # 工作思考
 
+## 專案 Submodule
+
+| 資料夾 | GitHub 儲存庫 |
+| --- | --- |
+| `ilwct_server` | [adonismis/ilwct_server](https://github.com/adonismis/ilwct_server) |
+| `savs` | [adonismis/savs](https://github.com/adonismis/savs) |
+| `ruiyang-em.com` | [adonismis/ruiyang-em.com](https://github.com/adonismis/ruiyang-em.com) |
+| `ilwct_life` | [adonismis/ilwct_life](https://github.com/adonismis/ilwct_life) |
+
+複製本儲存庫後，可初始化並下載所有 submodule：
+
+```sh
+git submodule update --init --recursive
+```
+
+### 自動提出更新 PR
+
+推送提交到任一子專案的 `main` 後，子專案會通知 WorkHub。WorkHub 檢查四個子專案的 `main`，有新版本時建立或更新一張 PR。合併 PR 後，WorkHub 才會記錄新的 submodule 版本。也可以在 WorkHub 的 Actions 介面手動執行 **Update submodules**。
+
+啟用時，請建立兩個 [fine-grained personal access token](https://github.com/settings/personal-access-tokens/new)，並在各儲存庫的 **Settings → Secrets and variables → Actions** 中設定：
+
+| Secret | 設定位置 | 權限 |
+| --- | --- | --- |
+| `WORKHUB_DISPATCH_TOKEN` | 四個子專案 | 僅選 WorkHub，設定 Contents 為 Read and write |
+| `WORKHUB_SUBMODULE_READ_TOKEN` | WorkHub | 僅選四個子專案，設定 Contents 為 Read-only |
+
+WorkHub 的 **Settings → Actions → General** 也需開啟 **Allow GitHub Actions to create and approve pull requests**，讓 workflow 可以建立 PR。設定好 Secret 後，可手動執行一次 **Update submodules** 以確認連線與權限。
+
 ## 專案技能清單
 
 在 Codex 開啟「工作思考」後，可以直接輸入表中的提示詞。
