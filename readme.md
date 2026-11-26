@@ -4,12 +4,12 @@
 
 ## 專案 Submodule
 
-| 資料夾 | GitHub 儲存庫 |
-| --- | --- |
-| `ilwct_server` | [adonismis/ilwct_server](https://github.com/adonismis/ilwct_server) |
-| `savs` | [adonismis/savs](https://github.com/adonismis/savs) |
-| `ruiyang-em.com` | [adonismis/ruiyang-em.com](https://github.com/adonismis/ruiyang-em.com) |
-| `ilwct_life` | [adonismis/ilwct_life](https://github.com/adonismis/ilwct_life) |
+| 資料夾 | 網站或系統名稱 | 用途 | GitHub 儲存庫 |
+| --- | --- | --- | --- |
+| `ilwct_server` | 五結鄉納骨堂塔位管理系統 | 管理塔位、櫃位、價位規則及使用者帳號的後台。 | [adonismis/ilwct_server](https://github.com/adonismis/ilwct_server) |
+| `savs` | 國立蘇澳海事網站改版提案 | 展示學校首頁與漁業科頁面，整理校園公告及校務服務入口。 | [adonismis/savs](https://github.com/adonismis/savs) |
+| `ruiyang-em.com` | 睿洋機電工程有限公司官網 | 展示公司資訊、最新消息與相簿，並提供內容管理後台。 | [adonismis/ruiyang-em.com](https://github.com/adonismis/ruiyang-em.com) |
+| `ilwct_life` | 祖德堂（蘭園）－五結鄉生命紀念園區 | 園區官網，提供納骨堂與園區介紹、便民服務、公告及線上服務資訊。 | [adonismis/ilwct_life](https://github.com/adonismis/ilwct_life) |
 
 複製本儲存庫後，可初始化並下載所有 submodule：
 
